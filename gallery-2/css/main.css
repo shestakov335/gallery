@@ -1,0 +1,105 @@
+@font-face {
+	font-family: "PacificoRegular"; 
+	src: url("../font/Pacifico-Regular.ttf") format("truetype"); 
+	font-style: normal; 
+	font-weight: normal; 
+}
+
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: rgba(65, 65, 65, 1.0);
+}
+
+header, footer {
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+	border-style: solid;
+	background-color: rgba(230, 230, 230, 1.0);
+	border-color: rgba(0, 0, 0, 1.0);
+}
+
+header {
+	justify-content: space-between;
+	align-items: center;
+	min-height: 64px;
+	border-width: 0px 0px 4px 0px;
+	padding-left: 2%;
+	padding-right: 5%;
+}
+
+footer {
+	height: auto;
+	justify-content: space-between;
+	align-items: center;
+	border-width: 4px 0px 4px 0px;
+	padding-left: 5%;
+	padding-right: 5%;
+	font-size: 22px;
+}
+
+.main {
+	background-color: darkgrey;
+	display: flex;
+	width: 95%;
+	max-width: 1024px;
+	margin: auto;
+	box-shadow: 0 0 0 10px 1px rgba(30, 30, 30, 0.6);
+	flex-wrap: wrap;
+}
+
+.heading {
+	text-align: center;
+	font-size: 48px;
+	font-family: 'PacificoRegular';
+}
+
+.linker {
+	font-size: 22px;
+	font-family: Verdana;
+}
+
+.logo-img {
+	padding-top: 6px;
+	padding-right: 6px;
+}
+
+.img-box {
+	column-count: 4;
+	column-gap: 0;
+	width: 85%;
+	max-width: 1400px;
+	margin: auto;
+	padding-bottom: 30px;
+}
+
+.image {
+	max-width: 100%;
+	display: block;
+	padding: 2px 2px 2px 2px;
+	border-radius: 10px;
+}
+
+.img-wrapper {
+	display: block;
+	opacity: 1;
+	transition: 0.5px;
+	position: relative;
+}
+
+.img-wrapper:hover {
+	opacity: 1;
+	transform: scale(1.6);
+	z-index: 10;
+	background-color: black;
+	box-shadow: 0px 0px 100px 30px rgba(0, 0, 0, 0.5);
+}
+
+.image + .image {
+	margin: 3px 0;
+}

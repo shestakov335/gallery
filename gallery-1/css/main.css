@@ -1,0 +1,132 @@
+@font-face {
+	font-family: "CarlitoItalic"; 
+	src: url("../font/Carlito-Italic.ttf") format("truetype"); 
+	font-style: normal; 
+	font-weight: normal; 
+}
+
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: rgba(65, 65, 65, 1.0);
+}
+
+header, footer {
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+	border-style: solid;
+	background-color: rgba(230, 230, 230, 1.0);
+	border-color: rgba(0, 0, 0, 1.0);
+}
+
+header {
+	justify-content: space-between;
+	align-items: center;
+	min-height: 64px;
+	border-width: 0px 0px 4px 0px;
+	padding-left: 2%;
+	padding-right: 5%;
+}
+
+footer {
+	height: auto;
+	justify-content: space-between;
+	align-items: center;
+	border-width: 4px 0px 4px 0px;
+	padding-left: 5%;
+	padding-right: 5%;
+	font-size: 22px;
+}
+
+.main {
+	background-color: darkgrey;
+	display: flex;
+	width: 95%;
+	max-width: 1000px;
+	margin: auto;
+	box-shadow: 0 0 0 10px 1px rgba(30, 30, 30, 0.6);
+	flex-wrap: wrap;
+}
+
+.logo-img {
+	padding-top: 10px;
+	padding-right: 10px;
+}
+
+.heading {
+	text-align: center;
+	font-size: 60px;
+	font-family: 'CarlitoItalic';
+}
+
+.linker {
+	font-size: 24px;
+	font-family: 'CarlitoItalic';
+}
+
+.item {
+	max-width: 490px;
+	max-height: 356px;
+	height: calc(100vw / 2 / 3 * 4);
+	width:  calc(100vw);
+	border-radius: 10px;
+	background-color: grey;
+	background-position: center;
+	background-size: 100%;
+}
+
+.item:hover {
+	border-radius: 0px;
+}
+
+.img_link {
+	display: block;
+	justify-content: center;
+	opacity: 1;
+	transition: opacity 0.6s ease, transform 0.6s ease-in, box-shadow 0.3s ease-out;		
+	margin: 5px;
+}
+
+@media all and (max-width: 768px) {
+	.logo-img {
+		padding-top: 0px;
+		padding-right: 0px;
+		height: 32px;
+		width: 32px;
+	}
+
+	.linker {
+		font-size: 16px;
+		font-family: 'CarlitoItalic';
+	}
+
+	.heading {
+		font-size: 30px;
+		font-family: 'CarlitoItalic';
+	}
+
+	.item {
+		max-width: initial;
+		max-width: initial;
+		width: 90vw;
+		height: calc(90vw / 16 * 9);
+	}
+
+	.ing_link {
+		margin:  5px 0;
+	}
+}
+
+@media all and (min-width: 1200px) {
+	.img_link:hover{
+		opacity: 1;
+		transform: scale(1.2) rotate(5deg);
+		z-index: 10;
+		box-shadow: 0 0 200px 100px rgba(0, 0, 0, 0.4);
+	}
+}
